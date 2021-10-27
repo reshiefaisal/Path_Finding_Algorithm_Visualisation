@@ -38,7 +38,7 @@ auto_generate_menu.grid(row=0, column=0, padx=2, pady=2, sticky=W)
 auto_generate_menu.current(0)
 auto_generate_menu.bind("<<ComboboxSelected>>", scale_action)
 
-wallScale = Scale(ui_frame, from_=10, to=50, resolution=1, orient=HORIZONTAL, label='Wall Density', length=200)
+wallScale = Scale(ui_frame, from_=10, to=50, resolution=1, orient=HORIZONTAL, label='Wall Density', length=180)
 wallScale.grid(row=0, column=1, padx=2, pady=2, sticky=W)
 Button(ui_frame, text='Build Maze', bg='pale green').grid(row=0, column=2, padx=2, pady=2)
 
