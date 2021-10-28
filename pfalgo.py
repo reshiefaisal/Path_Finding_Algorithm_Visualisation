@@ -42,8 +42,7 @@ wallScale = Scale(ui_frame, from_=10, to=50, resolution=1, orient=HORIZONTAL, la
 wallScale.grid(row=0, column=1, padx=2, pady=2, sticky=W)
 Button(ui_frame, text='Build Maze', bg='pale green').grid(row=0, column=2, padx=2, pady=2)
 
-algMenu = ttk.Combobox(ui_frame, textvariable=selected_alg,
-                       values=['A* Algorithm', 'Breadth_first search', 'Depth_first Search'])
+algMenu = ttk.Combobox(ui_frame, textvariable=selected_alg,values=['A* Algorithm', 'Breadth_first search', 'Depth_first Search'])
 algMenu.grid(row=0, column=3, padx=2, pady=2)
 algMenu.current(0)
 
